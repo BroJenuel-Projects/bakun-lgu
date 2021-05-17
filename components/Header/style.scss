@@ -1,0 +1,17 @@
+.hover-trigger-dropdown {
+  .hover-trigger-show {
+    @apply opacity-0;
+    @apply translate-y-4;
+    visibility: hidden;
+    margin-top: 3px;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .hover-trigger-show {
+      visibility: visible;
+      opacity: 1;
+      @apply translate-y-0;
+    }
+  }
+}
